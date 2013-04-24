@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.github.signed.maven.licenseplugin.examples</groupId>
+        <artifactId>examples</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>wrong-url</artifactId>
+
+    <dependencies>
+        <!-- the link provided in the license information points to the wrong url (com instead of org) -->
+        <dependency>
+            <groupId>com.thoughtworks.xstream</groupId>
+            <artifactId>xstream</artifactId>
+            <version>1.4.3</version>
+        </dependency>
+        <!-- has a license file that contains a relative path within the jar to fetch the apache license-->
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.9.2</version>
+        </dependency>
+    </dependencies>
+</project>
